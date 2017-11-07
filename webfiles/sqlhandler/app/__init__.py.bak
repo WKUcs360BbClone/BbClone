@@ -1,0 +1,6 @@
+from flask import Flask
+import sys
+
+sys.path.insert(0, '/var/www/sqlhandler')
+app = Flask(__name__)
+from app import views
