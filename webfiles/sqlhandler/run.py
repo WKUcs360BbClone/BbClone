@@ -1,4 +1,0 @@
-#!flask3.4/bin/python3.4
-from app import app
-if __name__ == '__main__':
-	app.run(debug=True)
