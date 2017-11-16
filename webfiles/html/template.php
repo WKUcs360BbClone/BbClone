@@ -3,8 +3,6 @@
 
 <?php
 
-include 'hash.php';
-
 $servername = "172.19.0.2";
 $sql_username = "root";
 $sql_password = "Bl4ckb0ard";
