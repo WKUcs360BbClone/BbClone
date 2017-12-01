@@ -3,6 +3,10 @@
 
 <?php
 
+/*
+This file was not used, but is being left for visibility's sake. There are problems with this code that were fixed in 
+other components after this functionality was cut.
+*/
 $servername = "172.19.0.2";
 $sql_username = "root";
 $sql_password = "Bl4ckb0ard";

@@ -5,6 +5,7 @@
 
 include 'hash.php';
 
+
 $servername = "172.19.0.2";
 $sql_username = "root";
 $sql_password = "Bl4ckb0ard";
@@ -16,9 +17,11 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
+//stored hash from username
 $sql = "SELECT hash FROM Instructors WHERE username = '" . $_POST['username'] . "'";
 $hash = $_POST['password'];
 
+//compare password to hash and redirect to home after creating session
 if ($stored = $conn->query($sql) > 0) {
 	if ($hash == $stored) {
 		session_start();
